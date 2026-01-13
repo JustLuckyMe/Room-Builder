@@ -1,6 +1,6 @@
 #region Type
 // Types
-public enum Type { Seating, Surfaces, Storage, Beds, Kitchen, Bathrom, Office, Lighting, Appliances, Decor }
+public enum Type { Seating, Surfaces, Storage, Beds, Lighting, Appliances, Decor }
 
 public enum SeatingSubType { Chair, Armchair, Sofa, Bench, Stool, Other }
 public enum SurfacesSubType { DiningTable, CoffeeTable, SideTable, Desk, Other }
@@ -9,19 +9,6 @@ public enum BedsSubType { SingleBed, DoubleBed, BunkBed, Other }
 public enum LightingSubType { CeilingLight, WallLight, FloorLamp, TableLamp, Other }
 public enum AppliancesSubType { BigAppliances, SmallAppliances, Other }
 public enum DecorSubType { Rug, Plant, WallArt, SmallDecor, Other }
-
-[System.Flags]
-public enum RoomContext
-{
-    None = 0,
-    Bedroom = 1 << 0,
-    Kitchen = 1 << 1,
-    Bathroom = 1 << 2,
-    LivingRoom = 1 << 3,
-    DiningRoom = 1 << 4,
-    Office = 1 << 5,
-    Any = Bedroom | Kitchen | Bathroom | LivingRoom | DiningRoom | Office
-}
 
 #endregion
 #region Style
