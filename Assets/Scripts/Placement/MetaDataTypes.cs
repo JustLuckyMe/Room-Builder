@@ -2,7 +2,7 @@
 // Types
 public enum Type { Seating, Surfaces, Storage, Beds, Lighting, Appliances, Decor }
 
-public enum SeatingSubType { Chair, Armchair, Sofa, Bench, Stool, Other }
+public enum SeatingSubType { Armchair, Sofa, Bench, Stool, Other }
 public enum SurfacesSubType { DiningTable, CoffeeTable, SideTable, Desk, Other }
 public enum StorageSubType { Cabinet, Shelf, Wardrobe, Drawer, Other }
 public enum BedsSubType { SingleBed, DoubleBed, BunkBed, Other }

@@ -330,7 +330,6 @@ public class PrefabCreatorWindow : EditorWindow
         #endregion
          
         objectType = new EnumField("Object Type", Type.Seating);
-        seating = new EnumField("Seating Subtype", SeatingSubType.Chair);
         surfaces = new EnumField("Surfaces Subtype", SurfacesSubType.DiningTable);
         storage = new EnumField("Storage Subtype", StorageSubType.Cabinet);
         beds = new EnumField("Beds Subtype", BedsSubType.SingleBed);
@@ -913,5 +912,4 @@ public class PrefabCreatorWindow : EditorWindow
         foreach (Transform t in go.transform)
             SetLayerRecursive(t.gameObject, layer);
     }
-
 }
