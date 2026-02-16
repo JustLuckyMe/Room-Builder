@@ -26,7 +26,7 @@ public class ShopUI : MonoBehaviour
 
     [Header("Items UI")]
     [SerializeField] private ShopManager shopManager;
-    [SerializeField] private Transform itemsParent;      // Content holder (Grid/Vertical Layout)
+    [SerializeField] private Transform itemsParent;
     [SerializeField] private ShopItemCard itemCardPrefab;
 
     private int currentTab = 0;

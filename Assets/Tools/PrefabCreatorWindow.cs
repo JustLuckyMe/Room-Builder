@@ -330,6 +330,7 @@ public class PrefabCreatorWindow : EditorWindow
         #endregion
          
         objectType = new EnumField("Object Type", Type.Seating);
+        seating = new EnumField("Seating Type", SeatingSubType.Armchair);
         surfaces = new EnumField("Surfaces Subtype", SurfacesSubType.DiningTable);
         storage = new EnumField("Storage Subtype", StorageSubType.Cabinet);
         beds = new EnumField("Beds Subtype", BedsSubType.SingleBed);

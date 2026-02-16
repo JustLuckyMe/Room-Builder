@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,7 +10,8 @@ public class ShopManager : MonoBehaviour
     [Header("References")]
     [SerializeField] private PlayerBalance balance;
 
-    // Simple buy by index (for UI buttons that know their index)
+    public static event Action<ShopItemSO> OnItemPurchased;
+
     public void BuyItem(int index)
     {
         if (index < 0 || index >= allItems.Length)
@@ -32,6 +34,7 @@ public class ShopManager : MonoBehaviour
 
         Debug.Log("Bought item: " + item.itemName);
 
+        OnItemPurchased?.Invoke(item);
         // Later: hand off to placement system
         // PlacementController.Instance.StartPlacement(item.prefab, item.data);
 
